@@ -1,0 +1,9 @@
+@Data
+public class LoginDTO {
+
+	@NotBlank(message = "{usernameOrEmail.notblank}")
+	private String usernameOrEmail;
+	
+	@NotBlank(message = "{password.notblank}")
+	private String password;
+}
